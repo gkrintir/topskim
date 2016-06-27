@@ -99,7 +99,7 @@ void makeEMuSkim(const std::string inFileName = "", const std::string outFileNam
     Float_t         jteta[maxJets];
     Float_t         jtphi[maxJets];
     Float_t         jtm[maxJets]; 
-    Float_t         discr_csvV1[maxJets]; 
+    Float_t         discr_csvV2[maxJets]; 
 
     int trig = 0;
     
@@ -156,14 +156,14 @@ void makeEMuSkim(const std::string inFileName = "", const std::string outFileNam
     jetTree_p->SetBranchStatus("jtphi", 1);
     jetTree_p->SetBranchStatus("jteta", 1);
     jetTree_p->SetBranchStatus("jtm", 1);
-    jetTree_p->SetBranchStatus("discr_csvV1", 1);
+    jetTree_p->SetBranchStatus("discr_csvV2", 1);
         
     jetTree_p->SetBranchAddress("nref", &nref);
     jetTree_p->SetBranchAddress("jtpt", jtpt);
     jetTree_p->SetBranchAddress("jtphi", jtphi);
     jetTree_p->SetBranchAddress("jteta", jteta);
     jetTree_p->SetBranchAddress("jtm", jtm);
-    jetTree_p->SetBranchAddress("discr_csvV1", discr_csvV1);
+    jetTree_p->SetBranchAddress("discr_csvV2", discr_csvV2);
     
     hiTree_p->SetBranchStatus("*", 0);
     hiTree_p->SetBranchStatus("run", 1);
@@ -246,7 +246,7 @@ void makeEMuSkim(const std::string inFileName = "", const std::string outFileNam
          jtEta_[ij] = -999.;
          jtPhi_[ij] = -999.;
          jtM_[ij] = -999.;
-         discr_csvV1_[ij] = -999.;
+         discr_csvV2_[ij] = -999.;
        }
       
       if(isDebug) std::cout << __LINE__ << std::endl;
@@ -353,7 +353,7 @@ void makeEMuSkim(const std::string inFileName = "", const std::string outFileNam
         jtEta_[njets] = jteta[jetIter];
         jtPhi_[njets] = jtphi[jetIter];
         jtM_[njets]   = jtm[jetIter]; 
-        discr_csvV1_[njets] = discr_csvV1[jetIter];
+        discr_csvV2_[njets] = discr_csvV2[jetIter];
         ++njets;
       }
       nJt_ = njets;
