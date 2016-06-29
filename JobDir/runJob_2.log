@@ -1,0 +1,436 @@
+Sender: LSF System <lsfadmin@b6a251ff64.cern.ch>
+Subject: Job 819275199: <runJob_2> in cluster <batch> Done
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b6a251ff64.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:12:24 2016
+Results reported on Wed Jun 29 19:13:53 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+#cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+#root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+#export OUTPUT=AnaResults_2.root
+#cp test_data.root $OUTDIR/$OUTPUT
+#rm test_data.root
+
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 0, 5, "test_data.root", false)'
+export OUTPUT=AnaResults_1.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   31.41 sec.
+    Max Memory :                                 57.49 MB
+    Average Memory :                             28.01 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1221 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   63 sec.
+    Turnaround time :                            168 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819275199> on <b6a251ff64.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 0, 5, "test_data.root", false)...
+On file: 0/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_100.root
+On file: 1/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_101.root
+On file: 2/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 3/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 4/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+On file: 5/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_105.root
+
+Job finished at Wed Jun 29 19:13:27 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:01:03 KSI2K hours (63 KSI2K seconds)
+                 This process corresponds to     : 0:04:08 HS06  hours (248 HS06  seconds)
+Sender: LSF System <lsfadmin@b689a59325.cern.ch>
+Subject: Job 819251522: <runJob_2> in cluster <batch> Exited
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b689a59325.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:11:05 2016
+Results reported on Wed Jun 29 19:13:57 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+export OUTPUT=AnaResults_2.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   21.92 sec.
+    Max Memory :                                 62.25 MB
+    Average Memory :                             11.26 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1221 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   182 sec.
+    Turnaround time :                            1515 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819251522> on <b689a59325.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 2, 4, "test_data.root", false)...
+On file: 0/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 1/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 2/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+SysError in <TFile::Flush>: error flushing file test_data.root (No such file or directory)
+cp: cannot stat `test_data.root': No such file or directory
+rm: cannot remove `test_data.root': No such file or directory
+
+Job finished at Wed Jun 29 19:12:41 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:51 KSI2K hours (51 KSI2K seconds)
+                 This process corresponds to     : 0:03:21 HS06  hours (201 HS06  seconds)
+Sender: LSF System <lsfadmin@b629e483c1.cern.ch>
+Subject: Job 819274548: <runJob_2> in cluster <batch> Exited
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b629e483c1.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:11:52 2016
+Results reported on Wed Jun 29 19:14:17 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+export OUTPUT=AnaResults_2.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   18.02 sec.
+    Max Memory :                                 59.16 MB
+    Average Memory :                             20.01 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1215 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   156 sec.
+    Turnaround time :                            333 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819274548> on <b629e483c1.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 2, 4, "test_data.root", false)...
+On file: 0/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 1/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 2/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+SysError in <TFile::Flush>: error flushing file test_data.root (No such file or directory)
+cp: cannot stat `test_data.root': No such file or directory
+rm: cannot remove `test_data.root': No such file or directory
+
+Job finished at Wed Jun 29 19:13:34 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:42 KSI2K hours (42 KSI2K seconds)
+                 This process corresponds to     : 0:02:45 HS06  hours (165 HS06  seconds)
+Sender: LSF System <lsfadmin@b65dc32ed8.cern.ch>
+Subject: Job 819277534: <runJob_2> in cluster <batch> Done
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b65dc32ed8.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:18:37 2016
+Results reported on Wed Jun 29 19:21:04 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+#cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+#root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+#export OUTPUT=AnaResults_2.root
+#cp test_data.root $OUTDIR/$OUTPUT
+#rm test_data.root
+
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 10, 15, "test_data.root", false)'
+export OUTPUT=AnaResults_3.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   40.57 sec.
+    Max Memory :                                 74.50 MB
+    Average Memory :                             44.35 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1221 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   148 sec.
+    Turnaround time :                            214 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819277534> on <b65dc32ed8.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 10, 15, "test_data.root", false)...
+On file: 0/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_10.root
+On file: 1/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_110.root
+On file: 2/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_111.root
+On file: 3/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_112.root
+On file: 4/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_113.root
+On file: 5/6, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_114.root
+
+Job finished at Wed Jun 29 19:20:23 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:01:36 KSI2K hours (96 KSI2K seconds)
+                 This process corresponds to     : 0:06:15 HS06  hours (375 HS06  seconds)
+Sender: LSF System <lsfadmin@b69e35b2a0.cern.ch>
+Subject: Job 819288228: <runJob_2> in cluster <batch> Done
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b69e35b2a0.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:26:44 2016
+Results reported on Wed Jun 29 19:29:00 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+export OUTPUT=AnaResults_2.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   27.55 sec.
+    Max Memory :                                 61.50 MB
+    Average Memory :                             31.66 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1221 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   132 sec.
+    Turnaround time :                            157 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819288228> on <b69e35b2a0.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 2, 4, "test_data.root", false)...
+On file: 0/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 1/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 2/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+SysError in <TFile::Flush>: error flushing file test_data.root (No such file or directory)
+
+Job finished at Wed Jun 29 19:27:53 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:44 KSI2K hours (44 KSI2K seconds)
+                 This process corresponds to     : 0:02:53 HS06  hours (173 HS06  seconds)
+Sender: LSF System <lsfadmin@b6702bb37f.cern.ch>
+Subject: Job 819307412: <runJob_2> in cluster <batch> Exited
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b6702bb37f.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:37:50 2016
+Results reported on Wed Jun 29 19:40:03 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+export OUTPUT=AnaResults_2.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   16.94 sec.
+    Max Memory :                                 62.21 MB
+    Average Memory :                             25.91 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1221 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   130 sec.
+    Turnaround time :                            205 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819307412> on <b6702bb37f.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 2, 4, "test_data.root", false)...
+On file: 0/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 1/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 2/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+SysError in <TFile::Flush>: error flushing file test_data.root (No such file or directory)
+cp: cannot stat `test_data.root': No such file or directory
+rm: cannot remove `test_data.root': No such file or directory
+
+Job finished at Wed Jun 29 19:39:04 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:39 KSI2K hours (39 KSI2K seconds)
+                 This process corresponds to     : 0:02:34 HS06  hours (154 HS06  seconds)
+Sender: LSF System <lsfadmin@b6a5d1c208.cern.ch>
+Subject: Job 819325243: <runJob_2> in cluster <batch> Done
+
+Job <runJob_2> was submitted from host <lxplus086.cern.ch> by user <gkrintir> in cluster <batch>.
+Job was executed on host(s) <b6a5d1c208.cern.ch>, in queue <1nd>, as user <gkrintir> in cluster <batch>.
+</afs/cern.ch/user/g/gkrintir> was used as the home directory.
+</afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/JobDir> was used as the working directory.
+Started at Wed Jun 29 19:46:01 2016
+Results reported on Wed Jun 29 19:47:12 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+export OUTDIR=/afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/test
+cd /afs/cern.ch/user/g/gkrintir/PbPb_Top1/topskim/
+root -l  -q -b makeEMuSkim_OnBatch2.C'("data.txt", 2, 4, "test_data.root", false)'
+export OUTPUT=AnaResults_2.root
+cp test_data.root $OUTDIR/$OUTPUT
+rm test_data.root
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   21.39 sec.
+    Max Memory :                                 66.73 MB
+    Average Memory :                             45.59 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1024 MB
+    Max Processes :                              7
+    Max Threads :                                13
+    Run time :                                   66 sec.
+    Turnaround time :                            103 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/gkrintir/819325243> on <b6a5d1c208.cern.ch>
+
+Error in <TUnixSystem::DynamicPathName>: libFWCoreFWLite.so does not exist in /usr/lsf/lib64:/afs/cern.ch/sw/lcg/external/Boost/1.55.0_python2.7/x86_64-slc6-gcc47-opt/lib:.:/usr/lib64/root::/usr/lib64/root/cint/cint/stl
+Error: Function enable() is not defined in current scope  /afs/cern.ch/user/g/gkrintir/rootlogon.C:3:
+*** Interpreter error recovered ***
+
+Processing makeEMuSkim_OnBatch2.C("data.txt", 2, 4, "test_data.root", false)...
+On file: 0/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_102.root
+On file: 1/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_103.root
+On file: 2/3, root://eoscms//eos/cms/store/group/cmst3/group/hintt/mverweij/PP5TeV/data/SingleMuHighPt/crab_FilteredSingleMuHighPt_v3/160425_163333/0000/HiForestAOD_104.root
+
+Job finished at Wed Jun 29 19:47:06 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:49 KSI2K hours (49 KSI2K seconds)
+                 This process corresponds to     : 0:03:13 HS06  hours (193 HS06  seconds)

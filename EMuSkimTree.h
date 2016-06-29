@@ -31,7 +31,7 @@ Float_t jtPt_[nMaxJets];
 Float_t jtPhi_[nMaxJets];
 Float_t jtEta_[nMaxJets];
 Float_t jtM_[nMaxJets];
-Float_t discr_csvV1_[nMaxJets];
+Float_t discr_csvV2_[nMaxJets];
 
 // List of branches
 TBranch        *b_run;   //!
@@ -50,7 +50,7 @@ TBranch        *b_jtPt;   //!
 TBranch        *b_jtPhi;   //!
 TBranch        *b_jtEta;   //!
 TBranch        *b_jtM;   //!
-TBranch        *b_discr_csvV1;//!
+TBranch        *b_discr_csvV2;//!
 
 void BookTree()
 {
@@ -77,7 +77,7 @@ void BookTree()
   skimTree_p->Branch("jtPhi", jtPhi_, "jtPhi[nJt]/F");
   skimTree_p->Branch("jtEta", jtEta_, "jtEta[nJt]/F");
   skimTree_p->Branch("jtM", jtM_, "jtM[nJt]/F");
-  skimTree_p->Branch("discr_csvV1", discr_csvV1_, "discr_csvV1[nJt]/F");
+  skimTree_p->Branch("discr_csvV2", discr_csvV2_, "discr_csvV2[nJt]/F");
 
   return;
 }

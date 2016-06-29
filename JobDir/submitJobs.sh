@@ -1,0 +1,1 @@
+bsub -q 1nd -J runJob_2 -o runJob_2.log < runJob_2.sh
